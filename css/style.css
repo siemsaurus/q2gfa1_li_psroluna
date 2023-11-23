@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+#vid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    background-color: rgb(128, 155, 206);
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vh;
+}
+.links a{
+    padding: 1vw;
+    text-decoration: none;
+}
