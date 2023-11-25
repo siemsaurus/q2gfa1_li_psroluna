@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600&family=Hanken+Grotesk&family=League+Spartan:wght@400;900&family=Lilita+One&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 *{
     margin: 0;
+    padding: 0;
 }
 #vid{
     width: 100vw;
@@ -10,12 +12,66 @@
 }
 nav{
     display: flex;
-    background-color: rgb(128, 155, 206);
+    background-color:rgb(54, 57, 70);
     justify-content: space-around;
-    padding-top: 1vw;
+    padding-top: 0.5vw;
     padding-bottom: 1vh;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    color: rgb(177, 182, 166);
 }
 .links a{
     padding: 1vw;
     text-decoration: none;
+    color: rgb(177, 182, 166);
 }
+.banner{
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 5vw;
+    margin-top: 12vw;
+    color: rgb(177, 182, 166);
+}
+@media screen and (max-width: 600px){
+    nav{ position: relative; background-color: rgba(0, 0, 0, 0.669);}
+    .pagetitle{
+        padding: 1vw;
+        color: white;
+        transition: .5s;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.669);
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.728);
+        transition: .5s;
+    }
+    .links a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+        transition: .5s;
+        margin-left: 0;
+        padding-left: 1vh;}
+    
+    .links a:hover{background-color: #ddd; transition: .5s;}
+    nav:hover .links{display: block; transition: .5s;}
+    nav:hover .pagetitle{background-color: #2e73eb; transition: .5s;}
+}
+footer{
+    text-align: center;
+    background-color:rgb(15, 15, 30);
+    position: static;
+}
+.icon{
+    background: url(../media/sprite3.png);
+    background-repeat: no-repeat; width: 66px; height: 66px;
+    display: inline-block;
+}
+#twit{background-position: -66px -72px;}
+#fb{background-position: -439px -146px;}
+#tumblr{background-position: -216px -146px;}
+#yt{background-position: -439px -221px;}
